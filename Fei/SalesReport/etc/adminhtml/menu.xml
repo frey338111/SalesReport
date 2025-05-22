@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+        <add id="Fei_SalesReport::sales_reports"
+             title="Sales Reports"
+             module="Fei_SalesReport"
+             sortOrder="80"
+             parent="Magento_Reports::report"
+             resource="Fei_SalesReport::sales_reports"/>
+        <add id="Fei_SalesReport::report_sales_product_revenue"
+             title="Product Revenue Report"
+             module="Fei_SalesReport"
+             sortOrder="10"
+             parent="Fei_SalesReport::sales_reports"
+             action="feisalesreport/report/index"
+             resource="Fei_SalesReport::report_sales_product_revenue"/>
+    </menu>
+</config>

@@ -1,0 +1,23 @@
+{
+    "name": "fei/module-sales-report",
+    "version": "1.0.0",
+    "description": "N/A",
+    "type": "magento2-module",
+    "require": {
+        "magento/framework": "*",
+        "magento/module-reports": "100.4.*",
+        "magento/module-sales": "103.0.*"
+    },
+    "license": [
+        "Open Software License (OSL)"
+
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Fei\\SalesReport\\": ""
+        }
+    }
+}
