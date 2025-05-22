@@ -43,7 +43,8 @@ class Collection extends ReportItemCollection
             ])
             ->getSelect()
             ->group('main_table.product_id')
-            ->where('main_table.row_invoiced > main_table.amount_refunded');
+            ->where('main_table.row_invoiced > main_table.amount_refunded')
+            ->order('total_revenue DESC');
 
         return $this;
     }
